@@ -53,7 +53,7 @@ $ vi ~/hadoop/etc/hadoop/hdfs-site.xml
 </configuration>
 ```
 # MapReduce
-## core-site.xml
+## mapred-site.xml
 ```
 $ vi ~/hadoop/etc/hadoop/mapred-site.xml
 ```
