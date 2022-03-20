@@ -52,3 +52,38 @@ $ vi ~/hadoop/etc/hadoop/hdfs-site.xml
     </property>
 </configuration>
 ```
+# MapReduce
+## core-site.xml
+```
+$ vi ~/hadoop/etc/hadoop/mapred-site.xml
+```
+```
+<configuration>
+</configuration>
+```
+위의 내용을 아래와 같이 변경
+```
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+</configuration>
+```
+## yarn-site.xml
+```
+$ vi ~/hadoop/etc/hadoop/yarn-site.xml
+```
+```
+<configuration>
+</configuration>
+```
+위의 내용을 아래와 같이 변경
+```
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+</configuration>
+```
