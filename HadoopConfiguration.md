@@ -6,7 +6,7 @@ $ vi ~/hadoop/etc/hadoop/hadoop-env.sh
 ```
 #export JAVA_HOME=
 ```
-위의 내용을 아래와 같이 변경
+위의 내용을 아래와 같이 변경 (Java Home 디렉토리를 hadoop 환경 스크립트 반영)
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 ```
@@ -34,7 +34,6 @@ $ vi ~/hadoop/etc/hadoop/core-site.xml
 ```
 
 ## hdfs-site.xml
-1개의 가상 머신에서 Lab을 진행하기 때문에 replication factor를 1로 한다.
 
 ```
 $ vi ~/hadoop/etc/hadoop/hdfs-site.xml
@@ -43,7 +42,7 @@ $ vi ~/hadoop/etc/hadoop/hdfs-site.xml
 <configuration>
 </configuration>
 ```
-위의 내용을 아래와 같이 변경
+위의 내용을 아래와 같이 변경 (1개의 가상 머신에서 Lab을 진행하기 때문에 replication factor를 1로 한다.)
 ```
 <configuration>
     <property>
@@ -61,7 +60,7 @@ $ vi ~/hadoop/etc/hadoop/mapred-site.xml
 <configuration>
 </configuration>
 ```
-위의 내용을 아래와 같이 변경
+위의 내용을 아래와 같이 변경 (yarn 스케쥴러를 사용하도록 설정.)
 ```
 <configuration>
     <property>
