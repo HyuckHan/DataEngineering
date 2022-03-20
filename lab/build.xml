@@ -4,7 +4,7 @@
 	<property name="build.prod.dir"         location="${build.dir}/classes"/>
 	<property name="src.dir"                location="src"/>
 	<property name="lib.dir"                location="lib"/>
-    <property name="hadoop.dir"                location="/home/hhyuck/hadoop/"/>
+    <property name="hadoop.dir"                location="${user.home}/hadoop/"/>
 	<property name="jar.file" value="${build.dir}/hadoop-project.jar"/>
 
 	<path id="project.classpath">
