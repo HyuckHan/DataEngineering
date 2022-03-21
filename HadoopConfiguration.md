@@ -6,7 +6,7 @@ $ vi ~/hadoop/etc/hadoop/hadoop-env.sh
 ```
 #export JAVA_HOME=
 ```
-위의 내용을 아래와 같이 변경 (Java Home 디렉토리를 hadoop 환경 스크립트 반영)
+위의 내용을 아래와 같이 변경 (Java Home 디렉토리를 hadoop 환경 스크립트에 반영)
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 ```
