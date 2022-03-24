@@ -19,7 +19,7 @@ $ cat ~/.ssh/id_rsa.pub >>  ~/.ssh/authorized_keys
 ```
 ## Hadoop path 추가
 ```
-echo "export PATH=\$PATH:~/hadoop/bin:~/hadoop/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:~/hadoop/bin:~/hadoop/sbin" >> ~/.bashrc
 ```
 ## Lab
 ```
