@@ -2,7 +2,7 @@
 ## Basic Requirements (Ubuntu {18|20}.04 기준)
 ```
 $ sudo apt update
-$ sudo apt install openjdk-8-jdk ant vim build-essential openssh-server
+$ sudo apt install openjdk-8-jdk ant vim build-essential openssh-server git
 ```
 
 ## Hadoop Installation
