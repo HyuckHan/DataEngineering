@@ -17,9 +17,9 @@ $ ln -s hadoop-3.3.2 hadoop
 $ ssh-keygen -t rsa
 $ cat ~/.ssh/id_rsa.pub >>  ~/.ssh/authorized_keys
 ```
-## Hadoop path
+## Hadoop path 추가
 ```
-echo "export PATH=$PATH:~/hadoop/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:~/hadoop/bin:~/hadoop/bin" >> ~/.bashrc
 ```
 ## Lab
 ```
