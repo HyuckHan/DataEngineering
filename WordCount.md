@@ -1,4 +1,4 @@
-# WordCont 실행
+# WordCount 실행
 ## 코드 작성
 ```
 편집기를 이용해서 WordCount.java 코드 작성
