@@ -71,6 +71,11 @@ $ vi ~/hadoop/etc/hadoop/mapred-site.xml
 ```
 ## yarn-site.xml
 ```
+$ hadoop classpath
+
+/home/bigdata....... 이 내용을 아래의 xml 파일에 copy & paste한다.
+```
+```
 $ vi ~/hadoop/etc/hadoop/yarn-site.xml
 ```
 ```
@@ -83,6 +88,10 @@ $ vi ~/hadoop/etc/hadoop/yarn-site.xml
     <property>
         <name>yarn.nodemanager.aux-services</name>
         <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.application.classpath</name>
+        <value> 위의 hadoop 명령어의 결과를 copy & paste한다. </value>
     </property>
 </configuration>
 ```
