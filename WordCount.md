@@ -16,7 +16,7 @@ $ hadoop fs -copyFromLocal ~/hadoop/*.txt input
 ## WordCount 실행
 ```
 $ cd ~/ DataEngineering/lab
-$ hadoop jar build/hadoop-project.jar input output
+$ hadoop jar build/hadoop-project.jar WordCount input output
 ```
 ## 결과 확인
 ```
