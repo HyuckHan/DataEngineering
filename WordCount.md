@@ -11,7 +11,7 @@ $ ant
 ## input data upload
 ```
 $ hadoop fs -mkdir input
-$ hadoop fs -copyFromLocal ~/hadoop/README.txt input
+$ hadoop fs -copyFromLocal ~/hadoop/*.txt input
 ```
 ## WordCount 실행
 ```
