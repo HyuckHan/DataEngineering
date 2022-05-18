@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project name="spark-project" default="jar" basedir=".">
+	<property name="build.dir"             location="build"/>
+	<property name="build.prod.dir"         location="${build.dir}/classes"/>
+	<property name="src.dir"                location="src"/>
+	<property name="lib.dir"                location="lib"/>
+    <property name="spark.dir"                location="${user.home}/spark/"/>
+	<property name="jar.file" value="${build.dir}/spark-project.jar"/>
+
+	<path id="project.classpath">
+		<fileset dir="${spark.dir}/jars/">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+    <target name="prepare">
+        <mkdir dir="${build.prod.dir}" />
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}" />
+    </target>
+
+
+    <target name="compile" depends="prepare">
+        <javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.prod.dir}">
+			<classpath refid="project.classpath" />
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+ 		<jar jarfile="${jar.file}" basedir="${build.prod.dir}">
+ 		</jar>
+	</target>
+
+</project>
+
