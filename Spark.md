@@ -1,4 +1,4 @@
-# DataEngineering
+# Spark Lab
 ## Spark Installation
 ```
 $ cd ~
@@ -19,4 +19,16 @@ $ spark-submit --version
 //기존 lab repository를 update
 $ cd ~/DataEngineering
 $ git pull
+```
+## WordCount
+```
+//programming
+$ cd ~/DataEngineering/lab.spark
+$ vi src/WordCount.java
+
+//build
+$ ant
+
+//run
+$ spark-submit --class JavaWordCount  build/spark-project.jar ~/hadoop/README.txt output
 ```
